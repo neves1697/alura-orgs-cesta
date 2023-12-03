@@ -1,5 +1,6 @@
 import React from "react";
 import { Text, Image, StyleSheet, Dimensions, View } from "react-native";
+
 import topo from '../../assets/topo.png';
 import logo from '../../assets/logo.png';
 
@@ -34,6 +35,7 @@ const estilos = StyleSheet.create({
     topo: {
         width: "100%",
         height: 578 / 768 * width,
+        fontFamily: "Montserrat"
     },
 
     titulo: {
@@ -56,7 +58,7 @@ const estilos = StyleSheet.create({
         fontSize: 26,
         lineHeight: 42,
         color: "#464646",
-        fontWeight: "bold"
+        fontFamily: "MontserratBold"
     },
 
     fazenda: {
@@ -72,7 +74,8 @@ const estilos = StyleSheet.create({
     nomeFazenda: {
     fontSize: 16,
     lineHeight: 26,
-    marginLeft: 12
+    marginLeft: 12,
+    fontFamily: "MontserratRegular"
 },
 
     descricao: {
