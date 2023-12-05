@@ -1,9 +1,9 @@
 import React from "react";
 import { Text, Image, StyleSheet, Dimensions, View } from "react-native";
 
-import topo from '../../assets/topo.png';
-import logo from '../../assets/logo.png';
-import Texto from "../Components/Texto";
+import topo from '../../../../assets/topo.png';
+import logo from "../../../../assets/logo.png";
+import Texto from '../../../Components/Texto';
 
 
 const width = Dimensions.get('screen').width; // pegando a largura da tela

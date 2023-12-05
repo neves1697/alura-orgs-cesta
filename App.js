@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View, StatusBar, SafeAreaView } from 'react-native';
-import Cesta from './src/Telas/Cesta';
+import Cesta from './src/Telas/Cesta/Components';
 import { useFonts, Montserrat_400Regular, Montserrat_700Bold } from '@expo-google-fonts/montserrat';
 
 
