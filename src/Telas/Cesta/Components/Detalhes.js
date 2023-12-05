@@ -4,25 +4,19 @@ import { Image, StyleSheet, View } from "react-native";
 // importando componentes personalizados
 import Texto from '../../../Components/Texto';
 
-// importando imagens/ícones personalizados
-import logo from "../../../../assets/logo.png";
-
-export default function Detalhes() {
-    const reais = "R$";
+export default function Detalhes({nome, nomeFazenda, logoFazenda, preco, descricao}) {
 
     return <>
-        <Texto style={estilos.nome}>Cesta de verduras</Texto>
+        <Texto style={estilos.nome}> {nome} </Texto>
 
         <View style={estilos.fazenda} >
-            <Image source={logo} style={estilos.imagemFazenda} />
-            <Texto style={estilos.nomeFazenda} >Jenny Jack Farm</Texto>
+            <Image source={logoFazenda} style={estilos.imagemFazenda} />
+            <Texto style={estilos.nomeFazendaEstilo}> {nomeFazenda} </Texto>
 
         </View>
 
-        <Texto style={estilos.descricao} >
-            Cesta com produtos selecionados com cuidados espeiciais, direto para a cozinha
-        </Texto>
-        <Texto style={estilos.preco} >{reais} 40,00</Texto>
+        <Texto style={estilos.descricaoEstilo}> {descricao} </Texto>
+        <Texto style={estilos.precoEstilo}> {preco} </Texto>
     </>
 }
 
@@ -44,19 +38,19 @@ const estilos = StyleSheet.create({
         height: 32
     },
 
-    nomeFazenda: {
+    nomeFazendaEstilo: {
         fontSize: 16,
         lineHeight: 26,
         marginLeft: 12,
     },
 
-    descricao: {
+    descricaoEstilo: {
         color: "#A3A3A3",
         fontSize: 16,
         lineHeight: 26
     },
 
-    preco: {
+    precoEstilo: {
         color: "#2A9F85",
         fontWeight: "bold",
         fontSize: 26,

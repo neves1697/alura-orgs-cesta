@@ -8,10 +8,10 @@ import Texto from '../../../Components/Texto';
 import Topo from "../Components/Topo";
 
 
-export default function Cesta() {
+export default function Cesta({ topo, detalhes }) {
     return <>
-        <Topo />
-        <Detalhes />
+        <Topo {...topo} />
+        <Detalhes {...detalhes} />
         <View style={estilos.cesta} >
         </View>
     </>

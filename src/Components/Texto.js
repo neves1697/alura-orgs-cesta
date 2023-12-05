@@ -10,7 +10,7 @@ export default function Texto({ children, style }) {
     }
 
     return <>
-        <Text style={[style, estilo]} >{children}</Text>
+        <Text style={[style, estilo]} >{ children }</Text>
     </>
 }
 
