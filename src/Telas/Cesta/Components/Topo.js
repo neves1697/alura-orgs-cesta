@@ -12,7 +12,7 @@ const width = Dimensions.get('screen').width; // pegando a largura da tela
 export default function Topo() {
     return <>
         <Image source={topo} style={estilos.topo} />
-        <Texto style={estilos.titulo} >Detalhes da Cesta</Texto>
+        <Texto style={estilos.titulo}>Detalhes da Cesta</Texto>
     </>
 }
 
