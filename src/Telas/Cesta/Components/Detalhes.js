@@ -74,7 +74,6 @@ const estilos = StyleSheet.create({
         color: "#fff",
         fontSize: 16,
         lineHeight: 26,
-        fontWeight: "bold",
-        paddingHorizontal: 16
+        fontWeight: "bold"
     }
 });
