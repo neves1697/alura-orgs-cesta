@@ -1,10 +1,10 @@
 import React from "react";
-import { Image, StyleSheet, View, Button } from "react-native";
+import { Image, StyleSheet, View, TouchableOpacity } from "react-native";
 
 // importando componentes personalizados
 import Texto from '../../../Components/Texto';
 
-export default function Detalhes({nome, nomeFazenda, logoFazenda, preco, descricao, botao}) {
+export default function Detalhes({ nome, nomeFazenda, logoFazenda, preco, descricao, botao }) {
 
     return <>
         <Texto style={estilos.nome}> {nome} </Texto>
@@ -18,7 +18,9 @@ export default function Detalhes({nome, nomeFazenda, logoFazenda, preco, descric
         <Texto style={estilos.descricaoEstilo}> {descricao} </Texto>
         <Texto style={estilos.precoEstilo}> {preco} </Texto>
 
-        <Button title={botao} />
+        <TouchableOpacity style={estilos.botao} >
+            <Texto style={estilos.textoBotao} > {botao} </Texto>
+        </TouchableOpacity>
     </>
 }
 
@@ -58,5 +60,21 @@ const estilos = StyleSheet.create({
         fontSize: 26,
         lineHeight: 42,
         marginTop: 8,
+    },
+
+    botao: {
+        marginTop: 16,
+        backgroundColor: '#2A9F85',
+        paddingVertical: 16,
+        borderRadius: 6,
+    },
+
+    textoBotao: {
+        textAlign: "center",
+        color: "#fff",
+        fontSize: 16,
+        lineHeight: 26,
+        fontWeight: "bold",
+        paddingHorizontal: 16
     }
 });
