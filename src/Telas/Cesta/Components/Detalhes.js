@@ -1,10 +1,10 @@
 import React from "react";
-import { Image, StyleSheet, View } from "react-native";
+import { Image, StyleSheet, View, Button } from "react-native";
 
 // importando componentes personalizados
 import Texto from '../../../Components/Texto';
 
-export default function Detalhes({nome, nomeFazenda, logoFazenda, preco, descricao}) {
+export default function Detalhes({nome, nomeFazenda, logoFazenda, preco, descricao, botao}) {
 
     return <>
         <Texto style={estilos.nome}> {nome} </Texto>
@@ -17,6 +17,8 @@ export default function Detalhes({nome, nomeFazenda, logoFazenda, preco, descric
 
         <Texto style={estilos.descricaoEstilo}> {descricao} </Texto>
         <Texto style={estilos.precoEstilo}> {preco} </Texto>
+
+        <Button title={botao} />
     </>
 }
 
