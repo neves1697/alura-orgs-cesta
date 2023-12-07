@@ -11,8 +11,9 @@ import Topo from "../Components/Topo";
 export default function Cesta({ topo, detalhes }) {
     return <>
         <Topo {...topo} />
-        <Detalhes {...detalhes} />
+
         <View style={estilos.cesta} >
+            <Detalhes {...detalhes} />
         </View>
     </>
 }
