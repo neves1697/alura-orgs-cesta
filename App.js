@@ -13,7 +13,7 @@ export default function App() {
 
   if (!fontCarregada) {
     return (
-      <AppLoading />
+      <AppLoading />      
     );
   }
 
